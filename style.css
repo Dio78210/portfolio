@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#scroll_to_top {
+
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 30px;
+
+}
+
+#scroll_to_top img {
+
+    width: 25px;
+
+}
+.navbar a{
+    color: white;
+    margin-left: 20px;
+}
+
+.navbar a:hover{
+
+    color: rgb(0, 0, 0);
+    background-color: lightcoral;
+    border-radius: 130px;
+    transition: all 0.9s;
+
+}
+.navbar{
+
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+
+}
+
+header{
+    
+    padding: 10px;
+    padding-top: 80px;
+    color: white;
+    /*pourquoi j'ai un soucis avec ce 
+    display: flex;
+    justify-content: space-between;  */
+    
+    background: url(img/backgroundabstrait.jpg) no-repeat center center ;
+    background-size: cover;
+    
+}
+.texte{
+
+    padding: 0 10%;
+
+}
+
+img{
+    border-radius: 150px;
+}
+
+
+header img{
+    float: left;
+    shape-outside:ellipse(80%);
+    margin-right: 30px;
+}
+
+.profil{
+
+    flex: 0 0 auto;
+    width: 25%;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.button{
+
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+
+}
+
+.btn{
+
+    background-color: rgb(33, 33, 154, 1.0);
+    color: rgb(255, 255, 255);
+}
+
+
+
+#portfolio{
+    
+    background: #33383c;
+
+
+}
+
+h2,h3{
+
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: underline crimson 2px solid;
+}
+
+
+
+#formation{
+
+    background: url(img/backgroundabstrait.jpg) no-repeat center center ;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+
+}
+
+
+.logistique{
+
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.card{
+
+    border-radius: 50px;
+}
+.portfolio{
+
+    padding: 0 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.formation{
+
+    padding: 0 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+
+
+.competence{
+
+    padding: 0 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+
+.liste{
+
+    list-style: none;
+}
+
+ul{
+
+    padding: 0;
+}
+
+.lamanu,.peintre{
+
+    display: flex;
+    justify-content: flex-start;
+}
+#formulaire{
+
+    padding-bottom: 3%;
+    
+}
+#formulaire p{
+    text-align: center;
+}
+
+#formulaire h2{
+    color: black;
+}
+#competence{
+
+    color: rgb(255, 255, 255);
+    background: #33383c;
+
+}
+
+
+
+
+
+footer {
+    
+    background-color: #33383c;
+    padding: 40px 0px;
+}
+
+footer ul li {
+    padding: 10px 0px;
+}
+
+.img{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+.bi{
+
+    padding: 10px;
+    
+
+}
+
+.adress h2,
+.contact h2
+.social h2{
+    
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.adress li p,
+.contact li p,
+.social li a {
+    color: #FFF;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+.adress,
+.contact,
+.social {
+    list-style: none;
+}
+
+i{
+    color: rgba(255, 3, 3, 0.765);
+    font-size: large;
+}
+
+
+.copiryght{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
