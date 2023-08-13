@@ -5,6 +5,11 @@
     --text-color: black;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     margin: 3% 10%;
     font-family: "Roboto", sans-serif;
@@ -58,7 +63,6 @@ nav li span {
 header {
     margin-top: 60px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -104,9 +108,8 @@ header .header-right {
 
 header .header-right img {
     width: 100%;
-    border-radius: 80%;
+    border-radius: 50%;
 }
-
 
 
 h2,h3{
