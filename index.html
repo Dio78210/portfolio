@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logoDM.webp" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2bea8e7696.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Damien Mezieres Portfolio</title>
 </head>
 
@@ -32,11 +34,11 @@
     </h1>
     <ul>
         <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Mes projets</a>
+            <a class="nav-link" href="#projets">Mes projets</a>
         </li>
         
         <li class="nav-item">
-            <a class="nav-link" href="#competence">Compétence</a>
+            <a class="nav-link" href="#competence">Mes compétences</a>
         </li>
         
 
@@ -51,7 +53,7 @@
             
             <h1>Bonjour,<br /> Je suis Damien Mézières <span id="sec-text"></span></h1>
             <p>
-                Après 10 ans dans le transport et la logistique, je voulais changer et apprendre un métier ou je ne m'ennuierais pas. À la fin de ces 10 ans, j'étais dans un atelier reprographie où je m'occupais du paramétrage réseau des clients. Je me suis donc intéressé au web et après quelques mois de recherche, je me suis réorienté vers le Développement web. J'ai obtenu mon diplôme Bac +2 développeurs Web et Web mobile en 2023. Et je continue toujours à apprendre de ce métier si passionnant.
+                Après 10 ans dans le transport et la logistique, je voulais changer et apprendre un métier ou je ne m'ennuierais pas. À la fin de ces 10 ans, j'étais dans un atelier reprographie où je m'occupais du paramétrage réseau des clients. Je me suis donc intéressé au web et après quelques mois de recherche et un stage de quelques jours en entreprise, je me suis réorienté vers le Développement web. J'ai obtenu mon diplôme Bac +2 développeurs Web et Web mobile en 2023. Et je continue toujours à apprendre de ce métier si passionnant.
             </p>
     
             <div class="links">
@@ -66,240 +68,223 @@
     </header>
 
 
+    <section id="projets">
 
-    <section id="portfolio">
-    
-        <div class="container text-center ">
-    
-    
+        <div class="container">
+
             <h2 class="text-center">Mes Projets</h2>
-    
-            <div class=" portfolio row g-4">
-    
-                <div class="col-md-6 col-lg-3">
-    
-                    <div class="card h-100 ">
-                        <div class="card-header">
-                            <img src="img/Screenshot 2023-07-01 at 12-58-52 Admin.png" class="card-img-top" alt="logo HTML">
-                        </div>
-    
-                        <div class="card-body text-center">
-                            
-                            <h5 class="card-title">La fringale Street Food</h5>
-                            <p>La Fringale est un Food truck d'Eure et loir qui propose un large choix de burger et hotdog maison.
-                                Site vitrine de la fringale realisé dans le cadre d'un projet d'étude.<br>
-                                <hr>
-                                Réalisé en <br>HTML/ CSS / Bootstrap / Javascript /PHP / My SQL
-                            </p>
-                            
-                        </div>
 
-                        <div class="card-footer">
-                            <a href="https://la-fringale-street-food.com/" class="btn btn-primary">Lien Site Web</a>
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/Screenshot 2023-07-01 at 12-58-52 Admin.png"
+                            alt="">
+                        <div class="card-content">
+                            <h2>
+                                La fringale Street Food
+                            </h2>
+                            <p>Réalisé en: <br>HTML/ CSS/ Javascript/ PHP/ MySQL</p>
+                            <a href="https://la-fringale-street-food.com/" class="btn btn-primary">
+                                Lien du Site Web
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
-    
-    
-                <div class="col-md-6 col-lg-3">
-    
-                    <div class="card h-100">
-                    <div class="card-header">
-                        <img src="img/connexion_Hopital.jpg" class="card-img-top" alt="logo HTML">
-                    </div>
-    
-                        <div class="card-body text-center">
-                            
-                            <h5 class="card-title">Hopital</h5>
-                            <p>Site qui permet a l'utilisateur de ce connecter pour y enregistrer des patients avec leurs informations personnelles et d'attribuer des rendez-vous.Chaque rendez-vous peut etre remplacé par un autre client. 
-                                <hr>
-                                Réalisé en <br>HTML/ CSS / Bootstrap / Javascript /PHP / My SQL
-                            </p>
-    
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://github.com/Dio78210/hopital" class="btn btn-primary">Lien GitHub</a>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/connexion_Hopital.jpg"
+                            alt="">
+                        <div class="card-content">
+                            <h2>
+                                Hopital
+                            </h2>
+                            <p>Réalisé en: <br>HTML/ CSS/ PHP</p>
+                            <a href="https://github.com/Dio78210/hopital" class="btn btn-primary">
+                                Voir le code
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
-    
-    
-                <div class="col-md-6 col-lg-3">
-    
-                    <div class="card h-100">
-                    <div class="card-header">
-                        <img src="img/Blog-La-Manu.png" class="card-img-top" alt="logo HTML">
-                    </div>
-    
-                        <div class="card-body text-center">
-                            
-                            <h5 class="card-title">Blog La Manu</h5>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
-                                aspernatur
-                                quaerat dolorem, deleniti sequi accusamus ex delectus, dicta eaque quia ipsa? At
-                                laboriosam
-                                a ullam esse sed officiis rem adipisci!</p>
-                            
-    
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://github.com/Dio78210/Blog_La_Manu" class="btn btn-primary">Lien GitHub</a>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/Blog-La-Manu.png"
+                            alt="">
+                        <div class="card-content">
+                            <h2>
+                                Blog Ecole La Manu
+                            </h2>
+                            <p>Réalisé en: <br>Symphony/ Twig/ PHP</p>
+                            <a href="https://github.com/Dio78210/Blog_La_Manu" class="btn btn-primary">
+                                Voir le code
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
-    
-    
-                <div class="col-md-6 col-lg-3">
-    
-                    <div class="card h-100">
-                    <div class="card-header">
-                        <img src="img/Gamer Zone.png" class="card-img-top" alt="logo HTML">
-                    </div>
-    
-                        <div class="card-body text-center">
-                            
-                            <h5 class="card-title">Gamer Zone E-commerce</h5>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
-                                aspernatur
-                                quaerat dolorem, deleniti sequi accusamus ex delectus, dicta eaque quia ipsa? At
-                                laboriosam
-                                a ullam esse sed officiis rem adipisci!</p>
-    
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/Gamer Zone.png"
+                            alt="">
+                        <div class="card-content">
+                            <h2>
+                                Site E-commerce Gamer-Zone
+                            </h2>
+                            <p>Réalisé en: <br>HTML/ CSS/ Javascript</p>
+                            <a href="https://github.com/Dio78210/Projet-E-Commerce" class="btn btn-primary">
+                                Voir le code
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
                         </div>
-                        <div class="card-footer">
-                            <a href="https://github.com/Dio78210/Projet-E-Commerce" class="btn btn-primary">Lien GitHub</a>
-                        </div>
-    
                     </div>
-    
                 </div>
-    
-                <div class="col-md-6 col-lg-3">
-    
-                    <div class="card h-100">
-                    <div class="card-header">
-                        <img src="img/ToDoList.png" class="card-img-top" alt="logo HTML">
-                    </div>
-    
-                        <div class="card-body text-center">
-                            
-                            <h5 class="card-title">ToDo liste</h5>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
-                                aspernatur
-                                quaerat dolorem, deleniti sequi accusamus ex delectus, dicta eaque quia ipsa? At
-                                laboriosam
-                                a ullam esse sed officiis rem adipisci!</p>
-    
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/ToDoList.png"
+                            alt="">
+                        <div class="card-content">
+                            <h2>
+                                TodoList
+                            </h2>
+                            <p>Réalisé en: <br>HTML/ CSS/ Javascript</p>
+                            <a href="https://github.com/Dio78210/TodoList" class="btn btn-primary">
+                                Voir le code
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
                         </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-primary">Lien GitHub</a>
-                        </div>
-    
                     </div>
-    
                 </div>
-    
-                <!-- <div class="col-md-6 col-lg-3">
-    
-                    <div class="card h-100">
-                    <div class="card-header">
-                        <img src="img/connexion_Hopital.jpg" class="card-img-top" alt="logo HTML">
-                    </div>
-    
-                        <div class="card-body text-center">
-                            
-                            <h5 class="card-title">Hopital</h5>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
-                                aspernatur
-                                quaerat dolorem, deleniti sequi accusamus ex delectus, dicta eaque quia ipsa? At
-                                laboriosam
-                                a ullam esse sed officiis rem adipisci!</p>
-    
+
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/grandCanion.jpg"
+                            alt="">
+                        <div class="card-content">
+                            <h2>
+                                Ouest Américain
+                            </h2>
+                            <p>Réalisé en: <br>Wordpress</p>
+                            <a href="https://github.com/Dio78210/Wordpress-OuestAmericain" class="btn btn-primary">
+                                Voir le code
+                                <span class="material-symbols-outlined">
+                                    arrow_right_alt
+                                </span>
+                            </a>
                         </div>
-                        <div class="card-footer">
-                            <a href="" class="btn btn-primary">Lien GitHub</a>
-                        </div>
-    
                     </div>
-     -->
                 </div>
             </div>
         </div>
     </section>
     
 
-    <section id="competence">
 
-        <div class="container text-center">
-            <h2 class="text-center">Compétence</h2>
 
-            <div class=" competence row g-4">
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card text-bg-primary mb-3">
-                        <div class="card-header">Front-End</div>
-                        <div class="card-body">
-                            <ul class="liste">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Java Script</li>
-                                <li>&nbsp;</li>
-                            </ul>
-
-                        </div>
-                    </div>
+    <section class="container py-5" id="competence">
+        <div class="container">
+            <h2 class="text-center">Mes Compétences</h2>
+        
+            <h3 class="text-center ">Front-End</h3>
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">HTML</p>
+                    <img src="img/html-5-svgrepo-com (1).svg" alt="Logo HTML5" class="skills-logo">
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card text-bg-secondary mb-3">
-                        <div class="card-header">Back-End</div>
-                        <div class="card-body">
-
-                            <ul class="liste">
-                                <li>&nbsp;</li>
-                                <li>PHP</li>
-                                <li>My SQL</li>
-                                <li>&nbsp;</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">CSS</p>
+                    <img src="img/css-3-svgrepo-com.svg" alt="Logo CSS3" class="skills-logo">
                 </div>
-
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card text-bg-success mb-3">
-                        <div class="card-header">Outils</div>
-                        <div class="card-body">
-
-                            <ul class="liste">
-                                <li>GIT/GIT Hub</li>
-                                <li>Maquettage (Figma°</li>
-                                <li>Word Press</li>
-                                <li>Modelisation BdD</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">JavaScript</p>
+                    <img src="img/javascript-svgrepo-com.svg" alt="Logo JavaScript" class="skills-logo">
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="card text-bg-danger mb-3">
-                        <div class="card-header">Framework</div>
-                        <div class="card-body">
-
-                            <ul class="liste">
-                                <li>&nbsp;</li>
-                                <li>Bootstrap 5</li>
-                                <li>Symphony 6</li>
-                                <li>&nbsp;</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">Twig</p>
+                    <img src="img/twig.webp" alt="Logo Twig" class="skills-logo" width="120px" height="120px">
                 </div>
             </div>
         </div>
-    </section>
 
+        <div class="container">
+        
+            <h3 class="text-center ">Back-End</h3>
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">PHP</p>
+                    <img src="img/php-logo-svgrepo-com.svg" alt="Logo PHP" class="skills-logo">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">MySQL</p>
+                    <img src="img/mysql-logo-svgrepo-com.svg" alt="Logo MySQL" class="skills-logo">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container">
+        
+            <h3 class="text-center ">Frameworks et CMS</h3>
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">Symphony</p>
+                    <img src="img/symfony-svgrepo-com.svg" alt="Logo symfony" class="skills-logo">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">Bootstrap</p>
+                    <img src="img/bootstrap-svgrepo-com.svg" alt="Logo CSS3" class="skills-logo">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">Wordpress</p>
+                    <img src="img/wordpress-color-svgrepo-com.svg" alt="Logo JavaScript" class="skills-logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+        
+            <h3 class="text-center ">Outils</h3>
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">Git/ Github</p>
+                    <img src="img/github-color-svgrepo-com.svg" alt="Logo Github" class="skills-logo">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">Figma</p>
+                    <img src="img/figma-svgrepo-com.svg" alt="Logo Figma" class="skills-logo">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
+                    <p class="mb-3">Visual Studio Code</p>
+                    <img src="img/visual-studio-code-svgrepo-com.svg" alt="Logo VScode" class="skills-logo">
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
 
     <footer id="footer">
-
+        <hr>
         <div class="img">
             <img src="img/logoDM.webp" width="80" height="80" alt="logo DM">
         </div>

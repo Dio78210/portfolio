@@ -6,14 +6,18 @@ function changeDarkMode() {
     darkMode = false;
     document.documentElement.style.setProperty("--text-color", "black");
     document.documentElement.style.setProperty("--background-color", "#efe7e5");
+    document.documentElement.style.setProperty("--nav-link-color", "black");
     document.getElementById("dark-light-mode").innerHTML = "Dark mode";
   } else {
     darkMode = true;
     document.documentElement.style.setProperty("--text-color", "white");
-    document.documentElement.style.setProperty("--background-color", "black");
+    document.documentElement.style.setProperty("--background-color", "rgba(0, 0, 0, 0.800)");
+    document.documentElement.style.setProperty("--nav-link-color", "white");
     document.getElementById("dark-light-mode").innerHTML = "Light mode";
   }
 }
+
+
 
 // Ecriture du texte seul
 var aText = new Array("Développeur Junior web et web mobile ");
@@ -48,4 +52,28 @@ function typewriter() {
   }
 }
 typewriter();
+
+
+
+
+const sr = ScrollReveal({
+  easing: 'ease-in',
+  origin:"left",
+  duration:1000,
+  reset:true,
+  distance:"100px"
+});
+
+sr.reveal(".card", {
+  interval: 300
+},500);
+
+sr.reveal(".skills-logo", {
+  interval: 300,
+  scale: 1.5
+},300);
+
+sr.reveal("#footer", {
+  duration:2000,
+},800);
 
