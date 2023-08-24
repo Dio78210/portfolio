@@ -25,7 +25,7 @@
 </div>
 
 
-<nav>
+<nav id="nav">
     <h1>
         <span class="material-symbols-outlined">
             magic_button
@@ -44,6 +44,8 @@
 
         <li id="dark-light-mode" onclick="changeDarkMode()">Dark mode</li>
     </ul>
+
+    <div id="icons"></div>
 </nav>
 
 
@@ -51,7 +53,7 @@
     <header>
         <div class="header-left">
             
-            <h1>Bonjour,<br /> Je suis Damien Mézières <span id="sec-text"></span></h1>
+            <h1>Bonjour,<br /> Je suis <span id="sec-text"></span></h1>
             <p>
                 Après 10 ans dans le transport et la logistique, je voulais changer et apprendre un métier ou je ne m'ennuierais pas. À la fin de ces 10 ans, j'étais dans un atelier reprographie où je m'occupais du paramétrage réseau des clients. Je me suis donc intéressé au web et après quelques mois de recherche et un stage de quelques jours en entreprise, je me suis réorienté vers le Développement web. J'ai obtenu mon diplôme Bac +2 développeurs Web et Web mobile en 2023. Et je continue toujours à apprendre de ce métier si passionnant.
             </p>
@@ -84,13 +86,17 @@
                             <h2>
                                 La fringale Street Food
                             </h2>
+                            
+                            <button class="btn btn-primary" onclick="togglePopup(document.querySelector('.popup-overlay-1'))">Voir plus</button>
+                        </div>
+                    </div>
+                    <div class="popup-overlay popup-overlay-1">
+                        <div class="popup-content">
+                            <h2 class="popup-title">La fringale street food</h2>
                             <p>Réalisé en: <br>HTML/ CSS/ Javascript/ PHP/ MySQL</p>
-                            <a href="https://la-fringale-street-food.com/" class="btn btn-primary">
-                                Lien du Site Web
-                                <span class="material-symbols-outlined">
-                                    arrow_right_alt
-                                </span>
-                            </a>
+                            <p>La fringale est mon premier site web realisé de A a Z à la main. </p>
+                            <a href="https://la-fringale-street-food.com/" class="btn btn-primary popup-open">Voir le site web</a>
+                            <a href="javascript:void(0)" class="popup-exit btn btn-danger" onclick="togglePopup(document.querySelector('.popup-overlay-1'))">Fermer</a>
                         </div>
                     </div>
                 </div>
@@ -104,13 +110,16 @@
                             <h2>
                                 Hopital
                             </h2>
+                            
+                            <button class="btn btn-primary" onclick="togglePopup(document.querySelector('.popup-overlay-2'))">Voir plus</button>
+                        </div>
+                    </div>
+                    <div class="popup-overlay popup-overlay-2">
+                        <div class="popup-content">
+                            <h2 class="popup-title">Hopital</h2>
                             <p>Réalisé en: <br>HTML/ CSS/ PHP</p>
-                            <a href="https://github.com/Dio78210/hopital" class="btn btn-primary">
-                                Voir le code
-                                <span class="material-symbols-outlined">
-                                    arrow_right_alt
-                                </span>
-                            </a>
+                            <a href="https://github.com/Dio78210/hopital" class="btn btn-primary popup-open">Voir le code</a>
+                            <a href="javascript:void(0)" class="popup-exit btn btn-danger" onclick="togglePopup(document.querySelector('.popup-overlay-2'))">Fermer</a>
                         </div>
                     </div>
                 </div>
@@ -124,13 +133,16 @@
                             <h2>
                                 Blog Ecole La Manu
                             </h2>
+                            
+                            <button class="btn btn-primary" onclick="togglePopup(document.querySelector('.popup-overlay-3'))">Voir plus</button>
+                        </div>
+                    </div>
+                    <div class="popup-overlay popup-overlay-3">
+                        <div class="popup-content">
+                            <h2 class="popup-title">Blog Ecole La Manu</h2>
                             <p>Réalisé en: <br>Symphony/ Twig/ PHP</p>
-                            <a href="https://github.com/Dio78210/Blog_La_Manu" class="btn btn-primary">
-                                Voir le code
-                                <span class="material-symbols-outlined">
-                                    arrow_right_alt
-                                </span>
-                            </a>
+                            <a href="https://github.com/Dio78210/Blog_La_Manu" class="btn btn-primary popup-open">Voir le code</a>
+                            <a href="javascript:void(0)" class="popup-exit btn btn-danger" onclick="togglePopup(document.querySelector('.popup-overlay-3'))">Fermer</a>
                         </div>
                     </div>
                 </div>
@@ -144,13 +156,16 @@
                             <h2>
                                 Site E-commerce Gamer-Zone
                             </h2>
+                            
+                            <button class="btn btn-primary" onclick="togglePopup(document.querySelector('.popup-overlay-4'))">Voir plus</button>
+                        </div>
+                    </div>
+                    <div class="popup-overlay popup-overlay-4">
+                        <div class="popup-content">
+                            <h2 class="popup-title">Gamer-Zone</h2>
                             <p>Réalisé en: <br>HTML/ CSS/ Javascript</p>
-                            <a href="https://github.com/Dio78210/Projet-E-Commerce" class="btn btn-primary">
-                                Voir le code
-                                <span class="material-symbols-outlined">
-                                    arrow_right_alt
-                                </span>
-                            </a>
+                            <a href="https://github.com/Dio78210/Projet-E-Commerce" class="btn btn-primary popup-open">Voir le code</a>
+                            <a href="javascript:void(0)" class="popup-exit btn btn-danger" onclick="togglePopup(document.querySelector('.popup-overlay-4'))">Fermer</a>
                         </div>
                     </div>
                 </div>
@@ -164,13 +179,16 @@
                             <h2>
                                 TodoList
                             </h2>
+                            
+                            <button class="btn btn-primary" onclick="togglePopup(document.querySelector('.popup-overlay-5'))">Voir plus</button>
+                        </div>
+                    </div>
+                    <div class="popup-overlay popup-overlay-5">
+                        <div class="popup-content">
+                            <h2 class="popup-title">TodoList</h2>
                             <p>Réalisé en: <br>HTML/ CSS/ Javascript</p>
-                            <a href="https://github.com/Dio78210/TodoList" class="btn btn-primary">
-                                Voir le code
-                                <span class="material-symbols-outlined">
-                                    arrow_right_alt
-                                </span>
-                            </a>
+                            <a href="https://github.com/Dio78210/TodoList" class="btn btn-primary popup-open">Voir le code</a>
+                            <a href="javascript:void(0)" class="popup-exit btn btn-danger" onclick="togglePopup(document.querySelector('.popup-overlay-5'))">Fermer</a>
                         </div>
                     </div>
                 </div>
@@ -184,13 +202,16 @@
                             <h2>
                                 Ouest Américain
                             </h2>
+                            
+                            <button class="btn btn-primary" onclick="togglePopup(document.querySelector('.popup-overlay-6'))">Voir plus</button>
+                        </div>
+                    </div>
+                    <div class="popup-overlay popup-overlay-6">
+                        <div class="popup-content">
+                            <h2 class="popup-title">Ouest Américain</h2>
                             <p>Réalisé en: <br>Wordpress</p>
-                            <a href="https://github.com/Dio78210/Wordpress-OuestAmericain" class="btn btn-primary">
-                                Voir le code
-                                <span class="material-symbols-outlined">
-                                    arrow_right_alt
-                                </span>
-                            </a>
+                            <a href="https://github.com/Dio78210/Wordpress-OuestAmericain" class="btn btn-primary popup-open">Voir le code</a>
+                            <a href="javascript:void(0)" class="popup-exit btn btn-danger" onclick="togglePopup(document.querySelector('.popup-overlay-6'))">Fermer</a>
                         </div>
                     </div>
                 </div>
@@ -205,7 +226,6 @@
         <div class="container">
             <h2 class="text-center">Mes Compétences</h2>
         
-            <h3 class="text-center ">Front-End</h3>
             <div class="row text-center">
                 <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
                     <p class="mb-3">HTML</p>
@@ -223,13 +243,6 @@
                     <p class="mb-3">Twig</p>
                     <img src="img/twig.webp" alt="Logo Twig" class="skills-logo" width="120px" height="120px">
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
-        
-            <h3 class="text-center ">Back-End</h3>
-            <div class="row text-center">
                 <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
                     <p class="mb-3">PHP</p>
                     <img src="img/php-logo-svgrepo-com.svg" alt="Logo PHP" class="skills-logo">
@@ -238,14 +251,6 @@
                     <p class="mb-3">MySQL</p>
                     <img src="img/mysql-logo-svgrepo-com.svg" alt="Logo MySQL" class="skills-logo">
                 </div>
-                
-            </div>
-        </div>
-
-        <div class="container">
-        
-            <h3 class="text-center ">Frameworks et CMS</h3>
-            <div class="row text-center">
                 <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
                     <p class="mb-3">Symphony</p>
                     <img src="img/symfony-svgrepo-com.svg" alt="Logo symfony" class="skills-logo">
@@ -258,13 +263,6 @@
                     <p class="mb-3">Wordpress</p>
                     <img src="img/wordpress-color-svgrepo-com.svg" alt="Logo JavaScript" class="skills-logo">
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
-        
-            <h3 class="text-center ">Outils</h3>
-            <div class="row text-center">
                 <div class="col-lg-3 col-md-3 col-sm-4 col-6 mb-4">
                     <p class="mb-3">Git/ Github</p>
                     <img src="img/github-color-svgrepo-com.svg" alt="Logo Github" class="skills-logo">
@@ -333,7 +331,7 @@
         </div>
 
         <div class="copiryght">
-            <a href="#"><i class="bi bi-c-circle"></i>Damien Mézières copiryght 2023</a>
+            <p>Damien Mézières copiryght 2023</p>
         </div>
     </footer>
 

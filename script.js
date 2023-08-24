@@ -7,12 +7,14 @@ function changeDarkMode() {
     document.documentElement.style.setProperty("--text-color", "black");
     document.documentElement.style.setProperty("--background-color", "#efe7e5");
     document.documentElement.style.setProperty("--nav-link-color", "black");
+    document.documentElement.style.setProperty("--popup-overlay-color", "white");
     document.getElementById("dark-light-mode").innerHTML = "Dark mode";
   } else {
     darkMode = true;
     document.documentElement.style.setProperty("--text-color", "white");
     document.documentElement.style.setProperty("--background-color", "rgba(0, 0, 0, 0.800)");
     document.documentElement.style.setProperty("--nav-link-color", "white");
+    document.documentElement.style.setProperty("--popup-overlay-color", "rgba(0, 0, 0, 0.950)");
     document.getElementById("dark-light-mode").innerHTML = "Light mode";
   }
 }
@@ -55,12 +57,11 @@ typewriter();
 
 
 
-
+//evennement d'apparition au scroll de la page 
 const sr = ScrollReveal({
   easing: 'ease-in',
   origin:"left",
-  duration:1000,
-  reset:true,
+  duration:500,
   distance:"100px"
 });
 
@@ -77,3 +78,24 @@ sr.reveal("#footer", {
   duration:2000,
 },800);
 
+
+//popup sur les carte des projets
+function togglePopup(popupElement) {
+  popupElement.classList.toggle("open");
+}
+
+
+// burger navbar
+const links = document.querySelectorAll("nav li");
+
+
+icons.addEventListener("click", () => {
+    nav.classList.toggle("active")
+})
+
+
+links.forEach((link) =>{
+    link.addEventListener("click", () =>{
+        nav.classList.remove("active");
+    });
+});

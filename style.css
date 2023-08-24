@@ -4,6 +4,7 @@
     --background-color: #efe7e5;
     --text-color: rgb(0, 0, 0);
     --nav-link-color: black;
+    --popup-overlay-color:rgb(253, 253, 253);
 }
 
 *{
@@ -12,7 +13,7 @@
     box-sizing: border-box;
 }
 body {
-    margin: 3% 10%;
+    margin: 3% 10% 2% 10%;
     font-family: "Roboto", sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -52,6 +53,11 @@ nav li {
     cursor: pointer;
 }
 
+#icons{
+    cursor: pointer;
+    display: none;
+}
+
 #dark-light-mode:hover,.nav-item:hover{
     border-bottom: 2px var(--nav-link-color) solid;
     border-top: 2px var(--nav-link-color) solid;
@@ -69,7 +75,7 @@ nav li span {
 
 
 header {
-    margin: 60px 0 80px 0;
+    margin: 150px 0 80px 0;
     display: flex;
     align-items: center;
 }
@@ -125,15 +131,66 @@ header .header-right img {
 h2,h3{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 50px;
     font-weight: bolder;
 }
+
+
+
+.popup-title{
+    padding: 30px 20px 20px;
+}
+
+.popup-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    display: none;
+
+}
+
+.popup-overlay.open{
+    display: block !important;
+}
+
+.popup-content .popup-open{
+    margin-top: 30px;
+}
+
+.popup-content{
+    width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: var(--popup-overlay-color);
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    border: 1px solid black;
+    grid-template-columns: 100px 1fr;
+    /* transform: translate(-50% -50%); */
+}
+
+
+.popup-exit{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+
+
+
 
 
 .row {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    /* padding: 50px; */
     font-family: "Roboto", sans-serif;
 }
 
@@ -170,7 +227,7 @@ h2,h3{
 }
 
 .card p,
-.card a {
+.card button {
     position: absolute;
     opacity: 0;
     max-width: 80%;
@@ -183,7 +240,7 @@ h2,h3{
     font-weight: bold;
 }
 
-.card a {
+.card button {
     inset: auto auto 40px 30px;
     color: inherit;
     text-decoration: none;
@@ -198,7 +255,7 @@ h2,h3{
 }
 
 .card:hover p,
-.card:hover a {
+.card:hover button {
     opacity: 1;
     transition: opacity 0.5s 0.1s ease-in;
 }
@@ -234,7 +291,7 @@ hr{
 
 
 footer {
-    padding: 40px 0px;
+    padding-top: 40px;
 }
 
 footer ul li {
@@ -244,7 +301,7 @@ footer ul li {
 .img{
     display: flex;
     justify-content: center;
-    margin: 80px 0 30px 0;
+    padding-bottom: 10px;
 }
 
 #footer .img img{
@@ -286,10 +343,10 @@ footer ul li {
 }
 
 i{
-    color: rgba(255, 3, 3, 0.765);
-    font-size: large;
+    color: rgba(22, 19, 220, 0.529);
+    font-size: x-large;
+    font-weight: bold;
 }
-
 
 .copiryght{
     width: 100%;
@@ -312,5 +369,40 @@ i{
 
 }
 
+@media (max-width: 920px){
+
+    #icons{
+        display: block;
+    }
+
+    #icons::before{
+        content: "\2630"
+    }
+
+    .active #icons::before{
+        content: "\2715";
+    }
+
+
+    nav ul{
+        position: fixed;
+        left: -100%;
+        top: 10%;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.25s;
+        padding: 0;
+    }
+
+    nav li{
+        padding: 3px 0;
+    }
+
+    nav.active ul{
+        left: 0;
+    }
+
+}
 
 
