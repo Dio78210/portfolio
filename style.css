@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
     --background-color: #efe7e5;
@@ -11,12 +12,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
 }
 body {
     margin: 3% 10% 2% 10%;
     font-family: "Roboto", sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+    
 }
 
 #scroll_to_top {
@@ -125,6 +128,8 @@ header .header-right {
 header .header-right img {
     width: 70%;
     border-radius: 60% 40%;
+    border: 1px solid black;
+
 }
 
 
@@ -135,6 +140,11 @@ h2,h3{
     font-weight: bolder;
 }
 
+
+.outils{
+    /* padding: 50px; */
+    font-weight: bolder;
+}
 
 
 .popup-title{
@@ -177,7 +187,7 @@ h2,h3{
 .popup-exit{
     position: absolute;
     top: -10px;
-    right: -10px;
+    left: -10px;
     text-decoration: none;
     padding: 5px 10px;
 }
@@ -313,7 +323,7 @@ footer ul li {
     padding: 10px;
 }
 
-.adress h2,
+/* .adress h2,
 .contact h2
 .social h2{
     
@@ -324,7 +334,7 @@ footer ul li {
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 5px;
-}
+} */
 
 .adress li p,
 .contact li p,
