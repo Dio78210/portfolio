@@ -66,11 +66,11 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(".card", {
-  interval: 300
+  interval: 200
 },500);
 
 sr.reveal(".skills-logo", {
-  interval: 300,
+  interval: 100,
   scale: 1.5
 },300);
 
